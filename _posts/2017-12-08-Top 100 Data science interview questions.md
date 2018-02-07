@@ -3,7 +3,7 @@ layout: post
 title: Top 100 Data science interview questions
 published: true
 ---
-Data science, also known as data-driven decision, is an interdisciplinery field about scientific methods, process and systems to extract knowledge from data in various forms, and take descision based on this knowledge. A data scientist should not only be evaluated only on his/her knowledge on mahine learning, but he/she should also have good expertise on statistics. 
+Data science, also known as data-driven decision, is an interdisciplinery field about scientific methods, process and systems to extract knowledge from data in various forms, and take descision based on this knowledge. A data scientist should not only be evaluated only on his/her knowledge on machine learning, but he/she should also have good expertise on statistics. 
 I will try to start from very basics of data science and then slowly move to expert level. So let's get started.
 
 ### 1.  What is the difference between supervised and unsupervised machine learning?
