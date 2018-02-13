@@ -224,7 +224,9 @@ Recurrent networks rely on an extension of backpropagation called backpropagatio
 #### Machine learning: 
 Machine learning is a field of computer science that gives computers the ability to learn without being explicitly programmed. Machine learning can be categorized in following three categories.
 __Supervised machine learning__ 
+
 __Unsupervised machine learning__
+
 __Reinforcement lerning__
 
 #### Deep learning: 
@@ -232,6 +234,7 @@ Deep Learning is a subfield of machine learning concerned with algorithms inspir
 
 ### 24. What is reinforcement learning ?
 __Reinforcement learning__
+
 Reinforcement learning is inspired by the learning of human beings, it is based on the reward/panelity mechanism. 
 
 
