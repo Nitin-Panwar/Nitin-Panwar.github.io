@@ -223,8 +223,9 @@ Recurrent networks rely on an extension of backpropagation called backpropagatio
 ### 23. What is the difference between machine learning and machine learning?
 #### Machine learning: 
 Machine learning is a field of computer science that gives computers the ability to learn without being explicitly programmed. Machine learning can be categorized in following three categories.
-
-__Supervised machine learning, Unsupervised machine learning, Reinforcement lerning__
+ 1. Supervised machine learning, 
+ 2. Unsupervised machine learning, 
+ 3. Reinforcement lerning__
 
 #### Deep learning: 
 Deep Learning is a subfield of machine learning concerned with algorithms inspired by the structure and function of the brain called artificial neural networks.
