@@ -235,6 +235,13 @@ __Reinforcement learning__
 
 Reinforcement learning is inspired by the learning of human beings, it is based on the reward/panelity mechanism. 
 
+### 25. What is selection bias ?
+
+__Selection Bias__
+
+Selection bias is the bias introduced by the selection of individuals, groups or data for analysis in such a way that proper randomization is not achieved, thereby ensuring that the sample obtained is not representative of the population intended to be analyzed. It is sometimes referred to as the selection effect. The phrase "selection bias" most often refers to the distortion of a statistical analysis, resulting from the method of collecting samples. If the selection bias is not taken into account, then some conclusions of the study may not be accurate.
+
+
 
 
 
