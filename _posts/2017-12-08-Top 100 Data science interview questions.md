@@ -233,7 +233,9 @@ Deep Learning is a subfield of machine learning concerned with algorithms inspir
 ### 24. What is reinforcement learning ?
 __Reinforcement learning__
 
-Reinforcement learning is inspired by the learning of human beings, it is based on the reward/panelity mechanism. 
+![Imgur](https://i.imgur.com/w6tZJDg.png)
+
+Reinforcement Learning is learning what to do and how to map situations to actions. The end result is to maximize the numerical reward signal. The learner is not told which action to take, but instead must discover which action will yield the maximum reward.Reinforcement learning is inspired by the learning of human beings, it is based on the reward/panelity mechanism. 
 
 ### 25. What is selection bias ?
 
