@@ -254,6 +254,16 @@ Regularization is the process of adding tunning parameter to a model to induce s
 tf–idf is short for term frequency–inverse document frequency, is a numerical statistic that is intended to reflect how important a word is to a document in a collection or corpus. It is often used as a weighting factor in information retrieval and text mining. The tf-idf value increases proportionally to the number of times a word appears in the document, but is offset by the frequency of the word in the corpus, which helps to adjust for the fact that some words appear more frequently in general.
 
 
+### 28. What are Recommender Systems?
+
+A subclass of information filtering systems that are meant to predict the preferences or ratings that a user would give to a product. Recommender systems are widely used in movies, news, research articles, products, social tags, music, etc.
+
+
+### 29. What is the difference between Regression and classification ML techniques. 
+
+Both Regression and classification machine learning techniques come under __Supervised machine learning algorithms__. In Supervised machine learning algorithm, we have to train the model using labeled dataset, While training we have to explicitly provide the correct labels and algorithm tries to learn the pattern from input to output. 
+If our labels are discreate values then it will a classification problem, e.g 1,2,3 etc. but if our labels are continious values then it will be a regression problem, e.g 1.23, 1.333 etc.  
+
 
 
 
