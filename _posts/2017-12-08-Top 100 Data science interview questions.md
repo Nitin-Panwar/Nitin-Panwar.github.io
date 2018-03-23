@@ -262,7 +262,7 @@ A subclass of information filtering systems that are meant to predict the prefer
 ### 29. What is the difference between Regression and classification ML techniques. 
 
 Both Regression and classification machine learning techniques come under __Supervised machine learning algorithms__. In Supervised machine learning algorithm, we have to train the model using labeled dataset, While training we have to explicitly provide the correct labels and algorithm tries to learn the pattern from input to output. 
-If our labels are discreate values then it will a classification problem, e.g A,B etc. but if our labels are continious values then it will be a regression problem, e.g 1.23, 1.333 etc.  
+If our labels are discreate values then it will a classification problem, e.g A,B etc. but if our labels are continuous values then it will be a regression problem, e.g 1.23, 1.333 etc.  
 
 
 
