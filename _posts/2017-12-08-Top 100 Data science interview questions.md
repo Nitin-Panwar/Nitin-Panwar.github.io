@@ -269,23 +269,17 @@ If our labels are discreate values then it will a classification problem, e.g A,
 
 First of all you have to ask which ML model you want to train. 
 
-__For Neural networks:__ 
-
-Batch size with Numpy array will work.
+__For Neural networks:__  Batch size with Numpy array will work.
 
 __Steps:__
-
 1. Load the whole data in Numpy array. Numpy array has property to create mapping of complete dataset, it doesn't load complete dataset in memory. 
 2. You can pass index to Numpy array to get required data. 
 3. Use this data to pass to Neural network. 
 4. Have small batch size. 
 
-__For SVM:__ 
-
-Partial fit will work
+__For SVM:__ Partial fit will work
 
 __Steps:__
-
 1. Divide one big dataset in small size datasets. 
 2. Use partialfit method of SVM, it requires subset of complete dataset. 
 3. Repeat step 2 for other subsets. 
