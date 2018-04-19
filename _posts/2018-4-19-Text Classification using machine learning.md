@@ -4,7 +4,7 @@ title: Text Classification using machine learning
 published: true
 ---
 
-___Supervised Text Classification__ The goal is to improve the category classification performance for a set of text posts. The evaluation metric is the macro F1 score.
+The goal is to improve the category classification performance for a set of text posts. The evaluation metric is the macro F1 score.
 
 __Micro F1 Score:__ 
 In Micro-average method, you sum up the individual true positives, false positives, and false negatives of the system for different sets and the apply them to get the statistics. 
