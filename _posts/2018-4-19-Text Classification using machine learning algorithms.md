@@ -1,11 +1,8 @@
-
 ---
 layout: post
-title: Text Classification using machine learning algorithms
+title: Top 100 Data science interview questions
 published: true
-
 ---
-
 ## Supervised Text Classification 
 
 The goal is to improve the category classification performance for a set of text posts. The evaluation metric is the macro F1 score.
