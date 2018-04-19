@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Text Classification using machine learning algorithms
+title: Text Classification using machine learning
 published: true
 ---
 ## Supervised Text Classification 
