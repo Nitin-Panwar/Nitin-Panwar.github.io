@@ -14,35 +14,35 @@ __Macro F1 Score:__
 The method is straight forward. Just take the average of the precision and recall of the system on different sets.
 
 
-```python
-from termcolor import colored
-import glob
-import pandas as pd
-from collections import Counter
-from wordcloud import WordCloud, STOPWORDS
-import numpy as np
-from sklearn.pipeline import make_pipeline, FeatureUnion, Pipeline
-from time import time
-from collections import Counter
-from sklearn.linear_model import LogisticRegression
-from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
-from sklearn.pipeline import make_pipeline, FeatureUnion, Pipeline
-from sklearn.metrics import f1_score, classification_report, accuracy_score
-from sklearn.cross_validation import cross_val_score
-import xgboost as xgb
-from nltk import stem
-from nltk.corpus import stopwords
-from sklearn.linear_model import SGDClassifier
-from matplotlib import pyplot as plt
-%matplotlib inline
-```
+## python code
+    from termcolor import colored
+    import glob
+    import pandas as pd
+    from collections import Counter
+    from wordcloud import WordCloud, STOPWORDS
+    import numpy as np
+    from sklearn.pipeline import make_pipeline, FeatureUnion, Pipeline
+    from time import time
+    from collections import Counter
+    from sklearn.linear_model import LogisticRegression
+    from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
+    from sklearn.pipeline import make_pipeline, FeatureUnion, Pipeline
+    from sklearn.metrics import f1_score, classification_report, accuracy_score
+    from sklearn.cross_validation import cross_val_score
+    import xgboost as xgb
+    from nltk import stem
+    from nltk.corpus import stopwords
+    from sklearn.linear_model import SGDClassifier
+    from matplotlib import pyplot as plt
+    %matplotlib inline
+    
 
 
-```python
-allfiles = glob.glob(path + '/*.csv')
-dfs = [pd.read_csv(filename) for filename in allfiles]
-big_df = pd.concat(dfs, ignore_index=True).fillna('None')
-```
+## python code
+    allfiles = glob.glob(path + '/*.csv')
+    dfs = [pd.read_csv(filename) for filename in allfiles]
+    big_df = pd.concat(dfs, ignore_index=True).fillna('None')
+
 
 
 ```python
