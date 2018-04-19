@@ -5,12 +5,9 @@ published: true
 ---
 
 #### Supervised Text Classification 
-
 The goal is to improve the category classification performance for a set of text posts. The evaluation metric is the macro F1 score.
-
 __Micro F1 Score:__ 
 In Micro-average method, you sum up the individual true positives, false positives, and false negatives of the system for different sets and the apply them to get the statistics. 
-
 __Macro F1 Score:__
 The method is straight forward. Just take the average of the precision and recall of the system on different sets.
 
