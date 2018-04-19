@@ -1,4 +1,6 @@
 
+2018-4-19-Top Text Classification using machine learning algorithms.md
+
 ## Supervised Text Classification 
 
 The goal is to improve the category classification performance for a set of text posts. The evaluation metric is the macro F1 score.
