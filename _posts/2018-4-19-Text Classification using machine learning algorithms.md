@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Top 100 Data science interview questions
+title: Text Classification using machine learning algorithms
 published: true
 ---
 ## Supervised Text Classification 
