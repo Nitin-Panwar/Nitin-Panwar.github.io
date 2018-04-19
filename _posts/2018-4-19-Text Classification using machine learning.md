@@ -4,7 +4,7 @@ title: Text Classification using machine learning
 published: true
 ---
 
-## Supervised Text Classification 
+#### Supervised Text Classification 
 
 The goal is to improve the category classification performance for a set of text posts. The evaluation metric is the macro F1 score.
 
