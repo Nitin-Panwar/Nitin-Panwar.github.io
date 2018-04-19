@@ -1,5 +1,9 @@
 
-2018-4-19-Top Text Classification using machine learning algorithms.md
+---
+layout: post
+title: Text Classification using machine learning algorithms
+published: true
+---
 
 ## Supervised Text Classification 
 
