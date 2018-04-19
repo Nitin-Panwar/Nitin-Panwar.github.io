@@ -87,12 +87,10 @@ plt.axis("off")
 
 
 
+![Imgur](https://i.imgur.com/L1SlVyc.png)
 
-![png](output_6_1.png)
+![Imgur](https://i.imgur.com/QTWJIlM.png)
 
-
-
-![png](output_6_2.png)
 
 
 # CountVectorization with SVM
