@@ -3,8 +3,9 @@ layout: post
 title: Text Classification using machine learning
 published: true
 ---
+Text classification is one of the important task that can be done using machine learning algorithm, here in this blog post i am going to share how i started with the baseline model, then tried different models to improve the accuracy and finally settled down to the best model. The goal here is to improve the category classification performance for a set of text posts. The evaluation metric is the macro F1 score.
 
-The goal is to improve the category classification performance for a set of text posts. The evaluation metric is the macro F1 score.
+Accuracy is not the correct way to judge the performance of a binary classifier. We have other different metrics like. Precission, Recall, F1 Score to identify how our model is performing. 
 
 __Micro F1 Score:__ 
 In Micro-average method, you sum up the individual true positives, false positives, and false negatives of the system for different sets and the apply them to get the statistics. 
@@ -96,6 +97,7 @@ plt.axis("off")
 
 # CountVectorization with SVM
 
+Let's see how CountVectorization with SVM works, and mark it's score as our baseline score. Here i am using SGDClassifier with some hyperparameters tunning. 
 
 ```python
 svm_C = make_pipeline(CountVectorizer(ngram_range=(1,2)),SGDClassifier(loss='hinge', penalty='l2', alpha=0.001, n_iter=5, random_state=42), ).fit(train_posts, train_tags)
