@@ -97,7 +97,7 @@ plt.axis("off")
 ![Imgur](https://i.imgur.com/QTWJIlM.png)
 
 
-# CountVectorization with SVM
+### CountVectorization with SVM
 
 Let's see how CountVectorization with SVM works, and mark it's score as our baseline score. Here i am using SGDClassifier with some hyperparameters tunning. 
 
@@ -113,7 +113,7 @@ print 'SVM_score_f1(test):{}, SVM_score_f1(train):{}'.format(SVM_score_test, SVM
 
     SVM_score_f1(test):0.782114278382, SVM_score_f1(train):0.851741742302
 
-# CountVectorizer with LR
+### CountVectorizer with LR
 
 ```python
 lr1 = make_pipeline(CountVectorizer(ngram_range=(1,2)), LogisticRegression(), ).fit(train_posts, train_tags)
@@ -130,7 +130,7 @@ print 'lr1_score_f1(test):{} --- lr1_score_f1(train):{}'.format(lr1_score_test, 
 Here as you can clearly see Logistic Regression has improved the results over SVM. 
 Now let's try to add TFIDF also with CountVectorizer as input features. 
 
-# CountVectorizer + TFIDF with LR
+### CountVectorizer + TFIDF with LR
 
 ```python
 cv = Pipeline([('cv', CountVectorizer(ngram_range=(1,2)))])
@@ -149,7 +149,7 @@ print 'lr_score_f1(test):{} --- lr_score_f1(train):{}'.format(lr2_score_test, lr
 
 Here as you can see that results have been improved. So let's try different approaches to improve LR results further. 
 
-## Stemming 
+### Stemming 
 Preprocessing the posts with stop word removal and then porter stemming improved the F1 macro scores of both logistic regression and XGBoost classifiers.
 
 
@@ -166,7 +166,7 @@ stemmed_train = [porter_stem(post) for post in train_posts]
 stemmed_test = [porter_stem(post) for post in test_posts]
 ```
 
-## LDA+TFIDF with Logistic regression using Porter stemming
+### LDA+TFIDF with Logistic regression using Porter stemming
 In this case, we will use the addition of LDA topics with tfidf.
 
 ```python
@@ -187,7 +187,7 @@ print('testing score:', stem_lr_macro_f1)
 
 
 
-## TFIDF with XGboost using Porter Stemming
+### TFIDF with XGboost using Porter Stemming
 In the case of the XGBoost classifier, features did not seem to improve the performance. 
 
 ```python
@@ -288,4 +288,5 @@ for pred, clfs in zip(predictions, classifiers):
     ('weighted:', 0.85220434714428583)
     ('micro:', 0.85609872993050562)
     ()
+    
 
