@@ -13,6 +13,7 @@ In Micro-average method, you sum up the individual true positives, false positiv
 __Macro F1 Score:__
 The method is straight forward. Just take the average of the precision and recall of the system on different sets.
 
+__Let's start by importing all the required libraries__ 
 
 ```python
 from termcolor import colored
@@ -37,16 +38,17 @@ from matplotlib import pyplot as plt
 %matplotlib inline
 ```
 
+Here i am using some sample data, you can use data from [sklearn library ](http://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html)
 
 ```python
 allfiles = glob.glob(path + '/*.csv')
 dfs = [pd.read_csv(filename) for filename in allfiles]
 big_df = pd.concat(dfs, ignore_index=True).fillna('None')
 ```
+Let's split the data for training and testing purpose. Here i am using 80% data for training and rest 20% for testing. 
 
-
-```python
-train_size = int(len(big_df) * 0.8)
+```
+ntrain_size = int(len(big_df) * 0 8)
 print ("Train Size: %d" % train_size)
 print ("Test Size: %d" % (len(big_df) - train_size))
 train_posts = big_df['text'][:train_size]
@@ -111,10 +113,7 @@ print 'SVM_score_f1(test):{}, SVM_score_f1(train):{}'.format(SVM_score_test, SVM
 
     SVM_score_f1(test):0.782114278382, SVM_score_f1(train):0.851741742302
 
-
-# TFIDF with LR
-
-
+# CountVectorizer with LR
 
 ```python
 lr1 = make_pipeline(CountVectorizer(ngram_range=(1,2)), LogisticRegression(), ).fit(train_posts, train_tags)
@@ -123,13 +122,15 @@ lr1_prediction = lr1.predict(test_posts)
 lr1_score_train = f1_score(train_tags, lr1.predict(train_posts), average='macro')
 lr1_score_test = f1_score(test_tags, lr1.predict(test_posts), average='macro')
 
-
 print 'lr1_score_f1(test):{} --- lr1_score_f1(train):{}'.format(lr1_score_test, lr1_score_train) 
 ```
 
     lr1_score_f1(test):0.82265061112 --- lr1_score_f1(train):0.936119391843
 
+Here as you can clearly see Logistic Regression has improved the results over SVM. 
+Now let's try to add TFIDF also with CountVectorizer as input features. 
 
+# CountVectorizer + TFIDF with LR
 
 ```python
 cv = Pipeline([('cv', CountVectorizer(ngram_range=(1,2)))])
@@ -146,6 +147,7 @@ print 'lr_score_f1(test):{} --- lr_score_f1(train):{}'.format(lr2_score_test, lr
 
     lr_score_f1(test):0.835346783124 --- lr_score_f1(train):0.946749878492
 
+Here as you can see that results have been improved. So let's try different approaches to improve LR results further. 
 
 ## Stemming 
 Preprocessing the posts with stop word removal and then porter stemming improved the F1 macro scores of both logistic regression and XGBoost classifiers.
@@ -164,10 +166,8 @@ stemmed_train = [porter_stem(post) for post in train_posts]
 stemmed_test = [porter_stem(post) for post in test_posts]
 ```
 
-## Logistic regression with Porter temming
-This is the best performing classifier according to the F1 macro score, (but not according to the micro or weighted scores). In this case, the addition of LDA topics(but not the ad-hoc text features) leads to an improvement in the classification performance. 
-
-
+## LDA+TFIDF with Logistic regression using Porter stemming
+In this case, we will use the addition of LDA topics with tfidf.
 
 ```python
 lda = Pipeline([('tf', CountVectorizer()), ])
@@ -186,9 +186,9 @@ print('testing score:', stem_lr_macro_f1)
     ('testing score:', 0.81463428191661325)
 
 
-## XGboost with Stemming
-In the case of the XGBoost classifier the LDA topic and other ad-hoc text features did not seem to improve the performance. The reg_alpha parameter seems usually set to 0 for XGBoost tunings. Here setting it to 4 worked as a way to decrease the risk of overfitting.
 
+## TFIDF with XGboost using Porter Stemming
+In the case of the XGBoost classifier, features did not seem to improve the performance. 
 
 ```python
 stem_xgb_model = make_pipeline(TfidfVectorizer(strip_accents='unicode', min_df=5, ngram_range=(1, 2)), 
@@ -216,7 +216,6 @@ print('testing score:', stem_xgb_macro_f1)
 
 ### Majority Voting Ensembling
 The results of the above classifiers are ensembled via a simple majority voting scheme. In case of no majority, the prediction of the logistic regression without stemming (i.e. the classifier with the highest macro F1 score) is picked.
-
 
 ```python
 def majority_element(a):
