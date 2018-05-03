@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Breaking CAPTCHAs using machine learning
