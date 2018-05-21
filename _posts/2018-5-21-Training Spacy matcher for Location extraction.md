@@ -3,7 +3,7 @@ layout: post
 title: Training Spacy matcher for Location extraction 
 published: true
 ---
-Training Spacy matcher for Location extraction 
+#### Training Spacy matcher for Location extraction 
 
 Here we go... 
 If you want to extract location from a sentence, then below solution will help you to do so. 
