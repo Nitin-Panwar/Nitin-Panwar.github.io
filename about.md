@@ -14,7 +14,6 @@ I love to read about new technologies, AI start ups and share it to wider audien
 
 Check out my Linkedin profile https://www.linkedin.com/in/nitin-panwar-715a646a/. 
 
-Contact me at nitinpanwar98@gmail.com, if you'd like to get in touch!
 
 ### More Information
 
