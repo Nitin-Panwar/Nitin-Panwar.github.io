@@ -3,10 +3,8 @@ layout: post
 title: Training Spacy matcher for Location extraction 
 published: true
 ---
-Here we go... 
 
 If you want to extract location from a sentence, then below solution will help you to do so. 
-
 As you know NER(Named Entity Recognition) works well if you are dealing with some Internationl location, But if your task is to extract local location from a sentence then NER wouldn't work or you have to train NER for the local locations as well. But if you are having a limited number of locations and you want to extract it from the sentence then give a try to Spacy Matcher.
 
 First you have to train it with all the availble location then it will do the extraction magic for you.
