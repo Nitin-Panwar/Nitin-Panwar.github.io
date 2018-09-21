@@ -32,7 +32,7 @@ For Example: There are two documents and having content as:
 2: If ELK check FacingIssuesOnIT.
 
 To make inverted index each document will split in words and create below sorted index.
-[](https://i.imgur.com/loapMVe.png)
+![table](https://i.imgur.com/loapMVe.png)
 
 Now when we do some full-text search for String will sort documents based on existence and occurrence of matching counts.
 Usually in Books we have inverted indexes on last pages. Based on the word we can thus find the page on which the word exists.
