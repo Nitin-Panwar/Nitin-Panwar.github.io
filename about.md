@@ -12,7 +12,7 @@ I'm passionate about applying my knowledge of computer science and machine learn
 
 I love to read about new technologies, AI start ups and share it to wider audience.
 
-Check out my Linkedin profile https://www.linkedin.com/in/nitin-panwar-715a646a/. 
+Check out my Linkedin profile [Nitin Panwar Linkedin Profile](https://www.linkedin.com/in/nitin-panwar-715a646a/) 
 
 
 ### More Information
