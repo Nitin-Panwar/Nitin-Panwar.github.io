@@ -85,6 +85,10 @@ By default, a node will always be a master node and a data node, but depending o
 
 Cluster is a collection of one or more nodes (servers) that together holds your entire data and provides federated indexing and search capabilities across all nodes. A cluster is identified by a unique name which by default is "elasticsearch". This name is important because a node can only be part of a cluster if the node is set up to join the cluster by its name.
 
+### 6. What is a Tokenizer in ElasticSearch ?
+Tokenizers are used to break a string down into a stream of terms or tokens. A simple tokenizer might split the string up into terms wherever it encounters whitespace or punctuation. Elasticsearch has a number of built in tokenizers which can be used to build custom analyzers.
+
+
 
 
 
