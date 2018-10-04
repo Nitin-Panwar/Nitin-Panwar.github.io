@@ -285,6 +285,19 @@ __Steps:__
 3. Repeat step 2 for other subsets. 
 
 
+### 31. What is p-value?
+
+When you perform a hypothesis test in statistics, a p-value can help you determine the strength of your results. p-value is a number between 0 and 1. Based on the value it will denote the strength of the results. The claim which is on trial is called Null Hypothesis.
+
+Low p-value (≤ 0.05) indicates strength against the null hypothesis which means we can reject the null Hypothesis.
+High p-value (≥ 0.05) indicates strength for the null hypothesis which means we can accept the null Hypothesis
+p-value of 0.05 indicates the Hypothesis could go either way.
+To put it in another way,
+
+High P values: your data are likely with a true null.
+Low P values: your data are unlikely with a true null.
+
+
 
 
 
