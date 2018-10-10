@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: A Gentle Introduction to xgboost machine learning model
