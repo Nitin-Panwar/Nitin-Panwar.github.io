@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Convolutional neural networks : CNN explanation and Implementation
+title: Convolutional neural networks(CNN) explanation and implementation for begginers
 published: False
 ---
 
@@ -48,6 +48,17 @@ Stride decides by how much we move our window ,when we have a stride of one we m
 ### Padding
 
 Padding is used to preserve the boundary information , since without padding they are only traversed once.
+![Imgur](https://i.imgur.com/MWorvXh.png)
+
+### Flattening Layer
+
+This layer will convert the 3-dimensions (height,width,depth) into a single long vector to feed it to the fully connected layer or Dense layer. It connects every neuron in one layer to every neuron in another layer.
+
+### Fully Connected Layer and Output Layer
+
+Fully connected layers or dense layers are the same hidden layers consisting of defined number of neurons connected with elements of another layer that we discussed in simple ANN. However the output layer is also the same but the number of neurons depend on our task. For instance in CIFAR-10 dataset we have 10 classes hence we will have 10 neurons in the outer layer.
+
+
 
 
 
