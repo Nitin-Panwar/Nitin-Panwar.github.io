@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Convolutional neural networks(CNN) explanation and implementation for begginers
+title: Convolutional neural networks(CNN) explanation and implementation part-1
 published: False
 ---
 
 ![Imgur](https://i.imgur.com/Qd9JpWj.png)
 
-Convolutional neural network ( CNN ) is a type of neural network architecture specially made to deal with visual data. 
-In this article we will discuss the architecture of CNN and implement it on CIFAR-10 dataset. The main benefit of using a CNN over simple ANN on visual data is that CNN’s are constrained to deal with image data exclusively. 
+Convolutional neural network (CNN) is a type of neural network architecture specially made to deal with visual data. 
+In this article we will discuss the architecture of CNN and implement it on CIFAR-10 dataset in part-2. The main benefit of using a CNN over simple ANN on visual data is that CNN’s are constrained to deal with image data exclusively. 
 Two main features of CNNs are
 1. Weight sharing 
 2. Feature extractors
