@@ -12,7 +12,7 @@ Two main features of CNNs are
 1. Weight sharing 
 2. Feature extractors
 
-![Imgur](https://i.imgur.com/x0DIK9L.jpg)
+![Imgur](https://i.imgur.com/RYMoJpL.png)
 
 Several new layers are introduced in CNNs to extract the useful features from our image or reducing the size of image without using the
 original representation. 
@@ -56,7 +56,7 @@ This layer will convert the 3-dimensions (height,width,depth) into a single long
 Fully connected layers or dense layers are the same hidden layers consisting of defined number of neurons connected with elements of another layer that we discussed in simple ANN. However the output layer is also the same but the number of neurons depend on our task. For instance in CIFAR-10 dataset we have 10 classes hence we will have 10 neurons in the outer layer.
 
 ### Summary
-![Imgur](https://i.imgur.com/RYMoJpL.png)
+![Imgur](https://i.imgur.com/x0DIK9L.jpg)
 
 In summary, the architecture of CNN , we can simply understand that it consist of an input layer followed by a Conv layer. The dimensions of conv layer depends on the data and problem, hence changing the dimensions accordingly. After the Conv Layer there is a activation layer , usually ReLU since it gives better results. After some conv and relu combination , pooling layer is used to reduce the size. Then after some combination of previously defined architecture , flattening layer is used to flatten the input for fully connected layer. Next to these layer, the last layer is the output layer.
 
