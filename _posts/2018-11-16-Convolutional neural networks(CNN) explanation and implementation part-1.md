@@ -14,26 +14,20 @@ Two main features of CNNs are
 
 ![Imgur](https://i.imgur.com/RYMoJpL.png)
 
-Several new layers are introduced in CNNs to extract the useful features from our image or reducing the size of image without using the
-original representation. 
+Several new layers are introduced in CNNs to extract the useful features from our image or reducing the size of image without using the original representation. 
 
 ### Convolution Layer - 
 
-Convolutional layer apply convolution operation on the input layer, passing the results to next layer. A convolution operation is basically computing a dot product between their weights and a small region 
-they are connected(currently overlapping) to in the input volume. This will change the dimensions depending on the filter size used and number of filters used. 
+Convolutional layer apply convolution operation on the input layer, passing the results to next layer. A convolution operation is basically computing a dot product between their weights and a small region they are connected(currently overlapping) to in the input volume. This will change the dimensions depending on the filter size used and number of filters used. 
 
 
 ### ReLU Layer
 
-Rectifying Linear Unit (ReLU) layer applies the relu activation element-wise. It is a mathematical function, which returns a positive value or 0 in place of previous negative values :
-
-
-It does not change the dimensions of the previous layer.
+Rectifying Linear Unit (ReLU) layer applies the relu activation element-wise. It is a mathematical function, which returns a positive value or 0 in place of previous negative values,  It does not change the dimensions of the previous layer.
 
 ### Pooling Layer
 
-Pooling layer will perform a down-sampling operation along the width and resulting in the reduction of the dimensions. The sole purpose of pooling is to reduce spatial dimensions.
-There are various types of pooling in which the most common is Max Pooling, i.e taking the maximum element from the window.
+Pooling layer will perform a down-sampling operation along the width and resulting in the reduction of the dimensions. The sole purpose of pooling is to reduce spatial dimensions. There are various types of pooling in which the most common is Max Pooling, i.e taking the maximum element from the window.
 
 ![Imgur](https://i.imgur.com/5Q54piT.png)
 
