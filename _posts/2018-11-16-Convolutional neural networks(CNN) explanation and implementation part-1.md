@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Convolutional neural networks(CNN) explanation and implementation part-1
-published: False
+published: True
 ---
 
 ![Imgur](https://i.imgur.com/Qd9JpWj.png)
