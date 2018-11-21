@@ -14,11 +14,20 @@ Two main features of CNNs are
 
 ![Imgur](https://i.imgur.com/RYMoJpL.png)
 
+As we described above, a simple ConvNet is a sequence of layers, and every layer of a ConvNet transforms one volume of activations to another through a differentiable function. We use three main types of layers to build ConvNet architectures: Convolutional Layer, Pooling Layer, and Fully-Connected Layer (exactly as seen in regular Neural Networks). We will stack these layers to form a full ConvNet architecture.
+
 Several new layers are introduced in CNNs to extract the useful features from our image or reducing the size of image without using the original representation. 
 
 ### Convolution Layer - 
 
 Convolutional layer apply convolution operation on the input layer, passing the results to next layer. A convolution operation is basically computing a dot product between their weights and a small region they are connected(currently overlapping) to in the input volume. This will change the dimensions depending on the filter size used and number of filters used. 
+
+We can compute the spatial size of the output volume as a function of the input volume size (W), the receptive field size of the Conv Layer neurons (F), the stride with which they are applied (S), and the amount of zero padding used (P) on the border. You can convince yourself that the correct formula for calculating how many neurons “fit” is given by (W−F+2P)/S+1. For example for a 7x7 input and a 3x3 filter with stride 1 and pad 0 we would get a 5x5 output. With stride 2 we would get a 3x3 output.
+
+
+![Imgur](http://cs231n.github.io/assets/conv-demo/index.html)
+
+
 
 
 ### ReLU Layer
