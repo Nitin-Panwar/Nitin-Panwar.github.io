@@ -25,8 +25,6 @@ Convolutional layer apply convolution operation on the input layer, passing the 
 We can compute the spatial size of the output volume as a function of the input volume size (W), the receptive field size of the Conv Layer neurons (F), the stride with which they are applied (S), and the amount of zero padding used (P) on the border. You can convince yourself that the correct formula for calculating how many neurons “fit” is given by (W−F+2P)/S+1. For example for a 7x7 input and a 3x3 filter with stride 1 and pad 0 we would get a 5x5 output. With stride 2 we would get a 3x3 output.
 
 
-![Imgur](http://cs231n.github.io/assets/conv-demo/index.html)
-
 
 
 
