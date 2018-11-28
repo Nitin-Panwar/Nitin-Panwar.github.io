@@ -304,6 +304,7 @@ The Naive Bayes Algorithm is based on the Bayes Theoram. Bayes' theoram describe
 ![Imgur](https://i.imgur.com/tIphkEk.png)
 
 __What is Naive ?__
+
  The Algorithm is 'naive' because it makes assumptions that may or may not turn out to be correct. 
  
  
