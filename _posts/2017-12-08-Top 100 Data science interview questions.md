@@ -297,6 +297,16 @@ To put it in another way,
 High P values: your data are likely with a true null.
 Low P values: your data are unlikely with a true null.
 
+### 32. What is 'Naive' in a Naive Bayes ?
+
+The Naive Bayes Algorithm is based on the Bayes Theoram. Bayes' theoram describes the probablitiy of an event, based on prior knowledge of conditions that might be related to the event. 
+
+![Imgur](https://i.imgur.com/tIphkEk.png)
+
+__What is Naive ?__
+ The Algorithm is 'naive' because it makes assumptions that may or may not turn out to be correct. 
+ 
+ 
 
 
 
