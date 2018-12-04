@@ -356,3 +356,6 @@ res= es.search(index='megacorp',doc_type='employee',body={
         }
     })
 ```
+
+
+Please comment below if you liked the above article on Elasticseach, it will definetally encourage me to write more or suggest any topic that you want to read further. 
