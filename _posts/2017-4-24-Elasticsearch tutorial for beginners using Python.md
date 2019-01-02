@@ -10,7 +10,7 @@ This tutorial is for the beginers who want to learn Elasticsearch from the scrat
 #### Elasticsearch:- 
 Elasticsearch is a real-time distributed search and analytics engine. It allows you to explore your data at a speed and at a scale never before possible. It is used for full text search, structured search, analytics and all three in combination. Elastic search is an open source search engine built on top of Apache Lucecne, a full text search engine library. 
 
-![Imgur](https://i.imgur.com/AOT2i7o.jpg)
+![Imgur](https://i.imgur.com/w7uMbKI.jpg)
 
 
 
