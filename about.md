@@ -12,6 +12,8 @@ I'm passionate about applying my knowledge of computer science and machine learn
 
 I love to read about new technologies, AI start ups and share it to wider audience.
 
+I'm also the founder of [Ayudo](https://www.ayudo.ai), an AI-native customer support platform that helps teams resolve more and burn out less.
+
 Check out my Linkedin profile [Nitin Panwar Linkedin Profile](https://www.linkedin.com/in/nitin-panwar-715a646a/) 
 
 
